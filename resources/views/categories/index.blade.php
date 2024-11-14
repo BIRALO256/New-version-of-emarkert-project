@@ -48,13 +48,13 @@ Catergory</button>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-           
+        
         <table id="user-table" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
                     <th>Number</th>
                     <th>category Name</th>
-                    <th scope="col" colspan="3" width="1%">Action</th> 
+                    <th scope="col" colspan="3" width="1%">Action</th>
                 </tr>
                 </thead>
 
@@ -63,12 +63,12 @@ Catergory</button>
                         <tr>
                             <td>{{ $counter++ }}</td>
                             <td>{{$data->name}}</td>
-                            <td><a href="{{ route('display_Subcategory', ['id' => Crypt::encrypt($data->id)]) }}" class="btn btn-success">Subcategory</a></td>
+                            <td><a href="{{ route('display_Subcategory',['id' => Crypt::encrypt($data->id)]) }}" class="btn btn-success">Subcategory</a></td>
                             <td><button class="btn btn-primary edit-button" data-target="#editModal"><i class="fa fa-edit"></i></button></td>
                             <td> <a onclick="return confirm('Are you sure you want to delete')" href="{{route('delete_category', $data->id)}}" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a></td>  
                         </tr>
-                @endforeach        
-                  </tbody>
+                @endforeach
+                </tbody>
             </table>
         </div>
         <!-- /.box-body -->

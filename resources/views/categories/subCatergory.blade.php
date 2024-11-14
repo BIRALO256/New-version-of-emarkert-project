@@ -30,7 +30,6 @@
 
         <!-- /.box-header -->
         <div class="box-body">
-           
         <table id="user-table" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
@@ -49,8 +48,8 @@
                             <td><button class="btn btn-primary edit-button" data-target="#editModal"><i class="fa fa-edit"></i></button></td>
                             <td><a onclick="return confirm('Are you sure you want to delete')" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a></td>  
                         </tr>
-                @endforeach        
-                  </tbody>
+                @endforeach
+                </tbody>
             </table>
         </div>
         <!-- /.box-body -->

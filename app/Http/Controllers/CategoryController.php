@@ -57,7 +57,7 @@ class CategoryController extends Controller
 
     public function add_Subcategory($id){
         $decrypt=Crypt::decrypt($id);
-         
+        
         $data5=categorie::find($decrypt);
         // dd($data5);
         return view('categories.addSubcategory',compact('data5')); 

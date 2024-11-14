@@ -140,7 +140,7 @@
     <footer class="main-footer">
         <!-- To the right -->
         <div class="pull-right hidden-xs">
-            Developed by New Wave Technologies
+            Developed by Jovic and Geoffrey
         </div>
         <!-- Default to the left -->
         <?php $date = date('Y')?>
